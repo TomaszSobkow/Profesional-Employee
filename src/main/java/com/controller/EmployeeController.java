@@ -19,7 +19,7 @@ public class EmployeeController {
     private EmployeeRepository employeeRepository;
 
     //GetAllEmployees
-    @GetMapping("employee")
+    @GetMapping("/employee")
     public List<Employee> getAllEmployees(){
         return  employeeRepository.findAll();
     }
